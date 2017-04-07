@@ -32,8 +32,10 @@ public class GetTranslation {
         String translation = ""; //to hold the JSON containing the translation
         try {
 
-            //Add the phrase to translate to the url 
-            URL url = new URL("https://translation.googleapis.com/language/translate/v2?key=AIzaSyC3PP98M3b9Z0U1BRmbAgPhnmp2Hs9aDbY&source=en&target=fr&q=" + english);
+            //Add the phrase to translate to the url
+            //NOTE: You need to visit retreive a key to access the API from Google. Replace "YOUR_KEY_HERE" in the URL 
+            //String with your own string
+            URL url = new URL("https://translation.googleapis.com/language/translate/v2?key=YOUR_KEY_HERE&source=en&target=fr&q=" + english);
             
             //Log the URL
             log.append("URL", url.toString());
